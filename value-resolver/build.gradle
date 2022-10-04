@@ -19,7 +19,6 @@ projectVersion = 1.0
 dockerCompose {
     projectName = "value-resolver"
     isRequiredBy(integrationTesting)
-    isRequiredBy(securityTesting)
     useComposeFiles.addAll("../docker-resources/docker-compose-base-test.yml", "docker-compose-override.yml")
 }
 
