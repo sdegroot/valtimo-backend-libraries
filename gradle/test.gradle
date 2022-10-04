@@ -16,6 +16,7 @@
 
 test {
     dependsOn cleanTest
+    failFast = true
 
     testLogging {
         events("passed", "skipped", "failed", "standardError")
